@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoQuest | French Course Completed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+
+    .celebration-box {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      animation: popIn 0.6s ease-out;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .celebration-box h2 {
+      font-size: 2rem;
+      color: #004d7a;
+    }
+
+    .celebration-box p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .confetti {
+      font-size: 2rem;
+    }
+
+    .continue-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #004d7a;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .continue-btn:hover {
+      background: #006fa1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LingoQuest</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../courses.html" class="active">Courses</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../career.html">Career</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>🎉 French Course Completed! 🎉</h1>
+    <p>Félicitations! You’ve completed your French learning journey! 🇫🇷</p>
+  </section>
+
+  <!-- Celebration Box -->
+  <div class="celebration-box">
+    <div class="confetti">🎊🎉🥳</div>
+    <h2>Bravo! 🎓</h2>
+    <p>You’ve successfully completed all the lessons in the French course. <br/>
+    From "Bonjour" to "Merci beaucoup", you've learned the basics of French communication. <br/>
+    We hope you enjoyed saying <strong>“Je m'appelle…”</strong> and exploring vocabulary, grammar, and culture!</p>
+
+    <p>Keep practicing, and you'll soon be speaking like a true francophone. 🌍</p>
+
+    <a href="../courses.html" class="continue-btn">Explore More Languages</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 LingoQuest. All rights reserved.</p>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoQuest | German Course</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LingoQuest</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../courses.html" class="active">Courses</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../career.html">Career</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Explore Our Language Courses</h1>
+    <p>Choose from globally recognized language programs crafted by experts.</p>
+    <a href="#courses" class="btn">See Courses</a>
+  </section>
+<!-- Back Button -->
+<div style="text-align: center; margin-top: 1rem;">
+  <a href="../courses.html" class="back-button" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004d7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+  " onmouseover="this.style.backgroundColor='#003654'" onmouseout="this.style.backgroundColor='#004d7a'">
+    ⬅️ Back to Courses
+  </a>
+</div>
+
+
+  <!-- German Course -->
+  <section class="course-hero">
+    <div class="course-text">
+      <h2>Master German with Confidence</h2>
+      <p>Goethe-certified curriculum with expert-led sessions, speaking & writing skills.</p>
+      <a href="german.html" class="btn">Explore German</a>
+    </div>
+    <div class="course-image">
+      <img src="assets/german-flag.jpg" alt="German Course Image" />
+    </div>
+  </section>
+
+  <!-- Japanese Course -->
+  <section class="course-hero reverse">
+    <div class="course-text">
+      <h2>Learn Japanese the Right Way</h2>
+      <p>JLPT-based structured course from N5 to N1 with grammar, kanji & culture.</p>
+      <a href="japanese.html" class="btn">Explore Japanese</a>
+    </div>
+    <div class="course-image">
+      <img src="assets/japan-flag.jpg" alt="Japanese Course Image" />
+    </div>
+  </section>
+
+  <!-- Enroll Form -->
+  <section id="enroll" class="enroll-section">
+    <div class="glass-box form-container">
+      <h2>Let Us Know About Yourself</h2>
+      <form action="https://formsubmit.co/sanskritig1705@gmail.com" method="POST" class="enroll-form">
+        <input type="hidden" name="_next" value="https://sanaryan175.github.io/LingoQuest/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="What motivates you to learn this language?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 LingoQuest. All rights reserved.</p>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

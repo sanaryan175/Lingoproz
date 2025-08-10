@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 4 – Hobbies | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 4: Hobbies in French</h1>
+  <p>Learn how to talk about your hobbies and favorite activities in French.</p>
+</section>
+
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">🎨 Common Hobbies Vocabulary</h2>
+      <ul class="number-grid">
+        <li><strong>Un loisir</strong> (a hobby)</li>
+        <li><strong>Écouter de la musique</strong> (to listen to music)</li>
+        <li><strong>Jouer au football</strong> (to play football)</li>
+        <li><strong>Lire</strong> (to read)</li>
+        <li><strong>Dessiner</strong> (to draw)</li>
+        <li><strong>Danser</strong> (to dance)</li>
+        <li><strong>Nager</strong> (to swim)</li>
+        <li><strong>Faire de la photographie</strong> (to do photography)</li>
+        <li><strong>Voyager</strong> (to travel)</li>
+        <li><strong>Cuisiner</strong> (to cook)</li>
+        <li><strong>Jardiner</strong> (to do gardening)</li>
+        <li><strong>Jouer à des jeux</strong> (to play games)</li>
+        <li><strong>Faire du jogging</strong> (to go jogging)</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📚 Grammar Tips</h2>
+      <ul>
+        <li>
+          Use <strong>aimer</strong> (to like) + verb:  
+          <em>J’aime lire.</em> (I like reading)
+        </li>
+        <li>
+          Use <strong>faire de</strong> (to do) or <strong>jouer à</strong> (to play) depending on activity:
+          <br><em>Je fais du sport.</em> (I do sports) <br>
+          <em>Je joue au tennis.</em> (I play tennis)
+        </li>
+        <li>
+          After verbs like <strong>aimer</strong> (to like), <strong>adorer</strong> (to love), or <strong>préférer</strong> (to prefer), use the base form (infinitive):  
+          <em>Elle adore danser.</em> (She loves dancing)
+        </li>
+        <li>
+          For time phrases, put them at the beginning or end:  
+          <em>Le week-end, je lis un livre.</em> (On weekends, I read a book)
+        </li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💬 Talking About Your Hobbies</h2>
+
+      <p>
+        <strong>Quels sont tes loisirs ?</strong><br>
+        (What are your hobbies?)<br>
+        ❓ <small>Use this when asking someone about what they like to do!</small>
+      </p>
+
+      <p>
+        <strong>J’aime écouter de la musique.</strong><br>
+        (I like listening to music)<br>
+        🎧 <small>"aimer" = to like, "écouter" = to listen, "musique" = music</small>
+      </p>
+
+      <p>
+        <strong>Mon frère joue au foot tous les jours.</strong><br>
+        (My brother plays football every day)<br>
+        ⚽ <small>"joue" = plays, "foot" = football, "tous les jours" = every day</small>
+      </p>
+
+      <p>
+        <strong>Le soir, je lis souvent des romans.</strong><br>
+        (In the evening, I often read novels)<br>
+        📚 <small>"le soir" = in the evening, "souvent" = often, "romans" = novels</small>
+      </p>
+
+      <p>
+        <strong>Elle adore voyager à l’étranger.</strong><br>
+        (She loves traveling abroad)<br>
+        ✈️ <small>"adorer" = to love, "voyager" = to travel, "à l’étranger" = abroad</small>
+      </p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🧠 Fun Facts</h2>
+      <ul>
+        <li>The word <strong>loisir</strong> means “hobby” and the plural is <strong>loisirs</strong>.</li>
+        <li>For sports/games: use <strong>jouer à</strong> (to play) → <em>Je joue au tennis.</em></li>
+        <li>For hobbies/activities: use <strong>faire de</strong> (to do) → <em>Je fais de la danse.</em></li>
+        <li>To express how much you like something:
+          <ul>
+            <li><strong>j’aime bien</strong> = I kind of like</li>
+            <li><strong>j’adore</strong> = I love</li>
+            <li><strong>je déteste</strong> = I hate</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Navigation Buttons -->
+<div class="bottom-nav-buttons">
+  <a href="../french/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson4.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .number-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
+

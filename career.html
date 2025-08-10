@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career - LingoQuest</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+ <header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>🚀 Join the LingoQuest Team</h1>
+  <p>Passionate about languages and learning? Explore exciting career opportunities with us!</p>
+</section>
+
+  <!-- Career Form Section -->
+  <section class="enroll-section">
+    <div class="glass-box">
+      <h1>Join Our Team</h1>
+      <p>Apply now to become a tutor at LingoQuest and inspire language learners!</p>
+
+      <form action="https://formsubmit.co/sanskritig1705@gmail.com" method="POST" class="enroll-form">
+        <!-- Hidden Fields for redirect and spam prevention -->
+        <input type="hidden" name="_next" value="https://sanaryan175.github.io/LingoQuest/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="position" placeholder="Position you're applying for" required>
+        <textarea name="message" rows="4" placeholder="Why should we hire you?" required></textarea>
+
+        <button type="submit">Apply Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 LingoQuest. All rights reserved.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoQuest | Hindi Course</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LingoQuest</div>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hindi Language Course</h1>
+    <p>Master spoken and written Hindi for everyday or professional use.</p>
+    <a href="#enroll" class="btn">Enroll Now</a>
+  </section>
+
+  <!-- Course Info -->
+  <section class="course-detail glass-box">
+    <h2>Why Learn Hindi?</h2>
+    <p>
+      Hindi is one of the most widely spoken languages in the world. Learn it for communication, government exams, culture, or academic study.
+    </p>
+
+    <h3 class="section-heading">What You'll Learn</h3>
+    <div class="features-list">
+      <div class="feature-item">✓ Devanagari script reading & writing</div>
+      <div class="feature-item">✓ Day-to-day conversation & grammar</div>
+      <div class="feature-item">✓ Vocabulary building & cultural understanding</div>
+      <div class="feature-item">✓ Spoken Hindi for regional and non-native learners</div>
+      <div class="feature-item">✓ Course Duration: 2 to 4 months (basic to advanced)</div>
+    </div>
+
+    <h3>Download Brochure</h3>
+    <a href="assets/hindi-brochure.pdf" class="btn">Download PDF</a>
+  </section>
+
+ <!-- Enroll Section -->
+<section id="enroll" class="enroll-section">
+  <div class="glass-box form-container">
+    <h2 >Let Us Know About Yourself</h2>
+    <form action="https://formsubmit.co/sanskritig1705@gmail.com" method="POST" class="enroll-form">
+      <!-- Hidden Fields for redirect and spam prevention -->
+      <input type="hidden" name="_next" value="https://sanaryan175.github.io/LingoQuest/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="What motivates you to learn this language?" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 LingoQuest. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 6 – Grammar Basics | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 6: Grammar Basics in German</h1>
+  <p>Build strong foundations in German sentence structure, verbs, pronouns, and more!</p>
+</section>
+
+<!-- Lesson Article Content -->
+
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">👋 Let's Talk About Pronouns</h2>
+      <p>These little words help us say who we’re talking about:</p>
+      <ul>
+        <li><strong>ich</strong> <button class="speaker-btn" data-word="ich">🔊</button> – I</li>
+        <li><strong>du</strong> <button class="speaker-btn" data-word="du">🔊</button> – you (informal)</li>
+        <li><strong>er / sie / es</strong> <button class="speaker-btn" data-word="er / sie / es">🔊</button> – he / she / it</li>
+        <li><strong>wir</strong> <button class="speaker-btn" data-word="wir">🔊</button> – we</li>
+        <li><strong>ihr</strong> <button class="speaker-btn" data-word="ihr">🔊</button> – you all</li>
+        <li><strong>sie</strong> <button class="speaker-btn" data-word="sie">🔊</button> – they</li>
+        <li><strong>Sie</strong> <button class="speaker-btn" data-word="Sie">🔊</button> – you (formal – always with capital S!)</li>
+      </ul>
+      <p><em>Example: “Ich bin neu hier.” <button class="speaker-btn" data-word="Ich bin neu hier">🔊</button> (I’m new here.)</em></p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🧱 How Do German Sentences Work?</h2>
+      <p>Think of this formula: <strong>Subject + Verb + Object</strong></p>
+      <ul>
+        <li><strong>Ich liebe Deutsch.</strong> <button class="speaker-btn" data-word="Ich liebe Deutsch">🔊</button> – I love German.</li>
+        <li><strong>Wir lernen zusammen.</strong> <button class="speaker-btn" data-word="Wir lernen zusammen">🔊</button> – We’re learning together.</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🔁 Conjugating Verbs</h2>
+      <p>Verbs change depending on <strong>who</strong> is doing the action. Let's take <strong>spielen</strong> <button class="speaker-btn" data-word="spielen">🔊</button> (to play):</p>
+      <ul>
+        <li>ich <strong>spiele</strong> <button class="speaker-btn" data-word="spiele">🔊</button> – I play</li>
+        <li>du <strong>spielst</strong> <button class="speaker-btn" data-word="spielst">🔊</button> – you play</li>
+        <li>er/sie/es <strong>spielt</strong> <button class="speaker-btn" data-word="spielt">🔊</button> – he/she/it plays</li>
+        <li>wir <strong>spielen</strong> <button class="speaker-btn" data-word="spielen">🔊</button> – we play</li>
+        <li>ihr <strong>spielt</strong> <button class="speaker-btn" data-word="spielt">🔊</button> – you all play</li>
+        <li>sie/Sie <strong>spielen</strong> <button class="speaker-btn" data-word="spielen">🔊</button> – they/you (formal) play</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🎨 Articles & Genders</h2>
+      <p>Every noun in German has a gender. Use the right article:</p>
+      <ul>
+        <li><strong>der</strong> <button class="speaker-btn" data-word="der">🔊</button> – for masculine words</li>
+        <li><strong>die</strong> <button class="speaker-btn" data-word="die">🔊</button> – for feminine words</li>
+        <li><strong>das</strong> <button class="speaker-btn" data-word="das">🔊</button> – for neuter words</li>
+      </ul>
+      <p><strong>Examples:</strong> der Tisch <button class="speaker-btn" data-word="der Tisch">🔊</button> (table), die Lampe <button class="speaker-btn" data-word="die Lampe">🔊</button> (lamp), das Buch <button class="speaker-btn" data-word="das Buch">🔊</button> (book)</p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📈 Making Plurals in German</h2>
+      <p>In German, making plurals isn't always just about adding "s" like in English. Different nouns change in different ways — but don't worry! You'll quickly get the hang of it. 😄</p>
+
+      <p><strong>💡 General Rule:</strong> There's no one-size-fits-all! But here are the <strong>5 most common patterns</strong>:</p>
+
+      <ul>
+        <li>🔹 <strong>Add -e</strong>  
+          <br><em>Common for many masculine nouns.</em><br>
+          <strong>der Hund</strong> <button class="speaker-btn" data-word="der Hund">🔊</button> → <strong>die Hunde</strong> <button class="speaker-btn" data-word="die Hunde">🔊</button> (dog → dogs)
+        </li>
+
+        <li>🔹 <strong>Add -er + Umlaut (ä/ö/ü)</strong>  
+          <br><em>Common for some neuter nouns.</em><br>
+          <strong>das Buch</strong> <button class="speaker-btn" data-word="das Buch">🔊</button> → <strong>die Bücher</strong> <button class="speaker-btn" data-word="die Bücher">🔊</button> (book → books)
+        </li>
+
+        <li>🔹 <strong>Add -n or -en</strong>  
+          <br><em>Very common with feminine nouns.</em><br>
+          <strong>die Lampe</strong> <button class="speaker-btn" data-word="die Lampe">🔊</button> → <strong>die Lampen</strong> <button class="speaker-btn" data-word="die Lampen">🔊</button> (lamp → lamps)
+        </li>
+
+        <li>🔹 <strong>Add -s</strong>  
+          <br><em>Used with modern or borrowed words.</em><br>
+          <strong>das Auto</strong> <button class="speaker-btn" data-word="das Auto">🔊</button> → <strong>die Autos</strong> <button class="speaker-btn" data-word="die Autos">🔊</button> (car → cars)
+        </li>
+
+        <li>🔹 <strong>Umlaut only (ä, ö, ü)</strong>  
+          <br><em>With no ending change in some cases.</em><br>
+          <strong>der Apfel</strong> <button class="speaker-btn" data-word="der Apfel">🔊</button> → <strong>die Äpfel</strong> <button class="speaker-btn" data-word="die Äpfel">🔊</button> (apple → apples)
+        </li>
+      </ul>
+
+      <p><strong>🌟 Super Tip:</strong> <em>Plural articles are always <span style="color: #004d7a;"><strong>die</strong></span> <button class="speaker-btn" data-word="die">🔊</button>, no matter if the noun was der, die, or das!</em></p>
+
+      <p><strong>🧠 Best Practice:</strong> Always learn nouns with their plural form:<br>
+      👉 <strong>die Katze</strong> <button class="speaker-btn" data-word="die Katze">🔊</button>, <strong>die Katzen</strong> <button class="speaker-btn" data-word="die Katzen">🔊</button><br>
+      👉 <strong>das Haus</strong> <button class="speaker-btn" data-word="das Haus">🔊</button>, <strong>die Häuser</strong> <button class="speaker-btn" data-word="die Häuser">🔊</button><br>
+      👉 <strong>der Tisch</strong> <button class="speaker-btn" data-word="der Tisch">🔊</button>, <strong>die Tische</strong> <button class="speaker-btn" data-word="die Tische">🔊</button></p>
+
+      <p><em>Practice makes perfect! Plural forms will start to feel natural over time.</em></p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">❓ Ask Like a Pro: W-Questions</h2>
+      <p>Want to ask questions? These are your best friends:</p>
+      <ul>
+        <li><strong>Was</strong> <button class="speaker-btn" data-word="Was">🔊</button> – What</li>
+        <li><strong>Wer</strong> <button class="speaker-btn" data-word="Wer">🔊</button> – Who</li>
+        <li><strong>Wo</strong> <button class="speaker-btn" data-word="Wo">🔊</button> – Where</li>
+        <li><strong>Wann</strong> <button class="speaker-btn" data-word="Wann">🔊</button> – When</li>
+        <li><strong>Wie</strong> <button class="speaker-btn" data-word="Wie">🔊</button> – How</li>
+        <li><strong>Warum</strong> <button class="speaker-btn" data-word="Warum">🔊</button> – Why</li>
+      </ul>
+      <p><em>Example: “Wie geht’s?” <button class="speaker-btn" data-word="Wie geht’s">🔊</button> (How are you?)</em></p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💬 Meet “Haben” and “Sein”</h2>
+      <p>These two verbs are everywhere. Master them early!</p>
+      <p><strong>haben</strong> <button class="speaker-btn" data-word="haben">🔊</button> – to have:</p>
+      <ul>
+        <li>ich <strong>habe</strong> <button class="speaker-btn" data-word="habe">🔊</button> – I have</li>
+        <li>du <strong>hast</strong> <button class="speaker-btn" data-word="hast">🔊</button> – you have</li>
+        <li>er/sie/es <strong>hat</strong> <button class="speaker-btn" data-word="hat">🔊</button> – he/she/it has</li>
+      </ul>
+      <p><strong>sein</strong> <button class="speaker-btn" data-word="sein">🔊</button> – to be:</p>
+      <ul>
+        <li>ich <strong>bin</strong> <button class="speaker-btn" data-word="bin">🔊</button> – I am</li>
+        <li>du <strong>bist</strong> <button class="speaker-btn" data-word="bist">🔊</button> – you are</li>
+        <li>er/sie/es <strong>ist</strong> <button class="speaker-btn" data-word="ist">🔊</button> – he/she/it is</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📝 Try These Out!</h2>
+      <ul>
+        <li><strong>Ich bin Student.</strong> <button class="speaker-btn" data-word="Ich bin Student">🔊</button> – I am a student.</li>
+        <li><strong>Wir haben einen Hund.</strong> <button class="speaker-btn" data-word="Wir haben einen Hund">🔊</button> – We have a dog.</li>
+        <li><strong>Was machst du?</strong> <button class="speaker-btn" data-word="Was machst du">🔊</button> – What are you doing?</li>
+      </ul>
+    </div>
+    <div class="learn-box">
+      <h2 class="section-heading">🌟 Fun Grammar Facts Every Beginner Should Know</h2>
+      <ul>
+      <li>
+        <strong>1. “die” is always used for plural nouns</strong><br />
+        In German, all plural words use “die” — even if the singular was “der” or “das”!<br />
+        <em>Examples:</em> <br />
+        der Hund <button class="speaker-btn" data-word="der Hund">🔊</button> (the dog) → <strong>die Hunde</strong> <button class="speaker-btn" data-word="die Hunde">🔊</button> (the dogs)<br />
+        das Buch <button class="speaker-btn" data-word="das Buch">🔊</button> (the book) → <strong>die Bücher</strong> <button class="speaker-btn" data-word="die Bücher">🔊</button> (the books)
+      </li>
+
+      <li>
+        <strong>2. The verb is usually the second word in a sentence</strong><br />
+        No matter what comes first, the main verb takes the second position in German sentences.<br />
+        <em>Example:</em> <br />
+        Heute <strong>gehe</strong> <button class="speaker-btn" data-word="Heute gehe">🔊</button> ich zur Schule. (Today I go to school.)
+      </li>
+
+      <li>
+        <strong>3. All nouns start with a capital letter</strong><br />
+        In German, every noun starts with a capital letter, even in the middle of a sentence.<br />
+        <em>Example:</em> <br />
+        Ich liebe <strong>Musik</strong> <button class="speaker-btn" data-word="Musik">🔊</button> und <strong>Bücher</strong> <button class="speaker-btn" data-word="Bücher">🔊</button>. (I love music and books.)
+      </li>
+
+      <li>
+        <strong>4. German has three types of “the”: der, die, das</strong><br />
+        Unlike English, German uses different words for “the” based on gender:<br />
+        - der <button class="speaker-btn" data-word="der">🔊</button> = masculine<br />
+        - die <button class="speaker-btn" data-word="die">🔊</button> = feminine<br />
+        - das <button class="speaker-btn" data-word="das">🔊</button> = neuter<br />
+        <em>Examples:</em> <br />
+        der Tisch <button class="speaker-btn" data-word="der Tisch">🔊</button> (the table), die Lampe <button class="speaker-btn" data-word="die Lampe">🔊</button> (the lamp), das Auto <button class="speaker-btn" data-word="das Auto">🔊</button> (the car)
+      </li>
+
+      <li>
+        <strong>5. Some verbs are split in two parts</strong><br />
+        These are called separable verbs — one part goes to the end of the sentence.<br />
+        <em>Example:</em> <br />
+        Ich <strong>stehe</strong> <button class="speaker-btn" data-word="Ich stehe">🔊</button> um 7 Uhr <strong>auf</strong> <button class="speaker-btn" data-word="auf">🔊</button>. (I get up at 7 o’clock.)
+      </li>
+
+      <li>
+        <strong>6. The verb moves to the end in “because” sentences</strong><br />
+        If you use “because” (weil), the verb goes to the end of the second part.<br />
+        <em>Example:</em> <br />
+        Ich bleibe zu Hause, weil ich <strong>krank bin</strong> <button class="speaker-btn" data-word="krank bin">🔊</button>. (I stay home because I am sick.)
+      </li>
+
+      <li>
+        <strong>7. German loves long words made of small words</strong><br />
+        You can combine two or more words into one big word — these are compound words!<br />
+        <em>Example:</em> <br />
+        Handschuh <button class="speaker-btn" data-word="Handschuh">🔊</button> = Hand + Schuh → Glove (“hand shoe”)<br />
+        Krankenhaus <button class="speaker-btn" data-word="Krankenhaus">🔊</button> = Krank + Haus → Hospital (“sick house”)
+      </li>
+
+      <li>
+        <strong>8. “Sie” means “you” in formal situations</strong><br />
+        Germans use “du” with friends and family, and “Sie” to be polite with strangers or elders.<br />
+        <em>Examples:</em> <br />
+        Du bist nett. <button class="speaker-btn" data-word="Du bist nett">🔊</button> (You are nice – informal)<br />
+        Sie sind freundlich. <button class="speaker-btn" data-word="Sie sind freundlich">🔊</button> (You are kind – formal)
+      </li>
+    </ul>
+
+      
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Navigation Buttons (above footer) -->
+<div class="bottom-nav-buttons">
+  <a href="../german/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson6.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+  // Speaker button click
+  document.querySelectorAll('.speaker-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audioSrc = btn.getAttribute('data-audio');
+      const word = btn.getAttribute('data-word');
+
+      if (audioSrc) {
+        const audio = new Audio(audioSrc);
+        audio.play();
+      } else if (word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'de-DE';
+        speechSynthesis.speak(utterance);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LingoQuest | German Course</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>German Language Course</h1>
+  <p>Go from “Hallo” to fluent—learn German effortlessly.</p>
+  <a href="german/index.html" class="btn">Start Learning Now</a>
+</section>
+
+<section class="course-detail glass-box">
+  <h2 >Why Learn German?</h2>
+  <p>
+    German is the most widely spoken language in Europe and an essential skill for working or studying in Germany, Austria, or Switzerland.
+  </p>
+<h3 class="section-heading">What You'll Learn</h3>
+
+<div class="features-list">
+  <div class="feature-item">✓ Hold everyday conversations with confidence</div>
+  <div class="feature-item">✓ Understand German movies, songs, and signs</div>
+  <div class="feature-item">✓ Write emails, messages, and short texts in German</div>
+  <div class="feature-item">✓ Explore German culture through language</div>
+</div>
+
+
+  <h3>Course Duration</h3>
+  <p>3 to 6 months (depending on level)</p>
+
+  <h3>Download Brochure</h3>
+  <a href="assets/german-brochure.pdf" class="btn">Download PDF</a>
+</section>
+
+<!-- Enroll Section -->
+<section id="enroll" class="enroll-section">
+  <div class="glass-box form-container">
+    <h2 >Let Us Know About Yourself</h2>
+    <form action="https://formsubmit.co/sanskritig1705@gmail.com" method="POST" class="enroll-form">
+      <!-- Hidden Fields for redirect and spam prevention -->
+      <input type="hidden" name="_next" value="https://sanaryan175.github.io/LingoQuest/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="What motivates you to learn this language?" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
+

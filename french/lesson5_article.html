@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 4 – Hobbies | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- Lesson Article Content -->
+<section class="hero">
+  <h1>Lesson 5: Days and Months in French</h1>
+  <p>Learn the names of days and months in French, with tips and examples.</p>
+</section>
+
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">📅 Days of the Week</h2>
+      <ul class="number-grid">
+        <li><strong>Lundi</strong> (Monday)</li>
+        <li><strong>Mardi</strong> (Tuesday)</li>
+        <li><strong>Mercredi</strong> (Wednesday)</li>
+        <li><strong>Jeudi</strong> (Thursday)</li>
+        <li><strong>Vendredi</strong> (Friday)</li>
+        <li><strong>Samedi</strong> (Saturday)</li>
+        <li><strong>Dimanche</strong> (Sunday)</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📆 Months of the Year</h2>
+      <ul class="number-grid">
+        <li><strong>Janvier</strong> (January)</li>
+        <li><strong>Février</strong> (February)</li>
+        <li><strong>Mars</strong> (March)</li>
+        <li><strong>Avril</strong> (April)</li>
+        <li><strong>Mai</strong> (May)</li>
+        <li><strong>Juin</strong> (June)</li>
+        <li><strong>Juillet</strong> (July)</li>
+        <li><strong>Août</strong> (August)</li>
+        <li><strong>Septembre</strong> (September)</li>
+        <li><strong>Octobre</strong> (October)</li>
+        <li><strong>Novembre</strong> (November)</li>
+        <li><strong>Décembre</strong> (December)</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📚 Grammar Tips</h2>
+      <ul>
+        <li>Days and months are <strong>not capitalized</strong> in French (unless at the beginning of a sentence).</li>
+        <li>To say “on Monday,” use: <em>le lundi</em> (literally “the Monday”).</li>
+        <li>To talk about a recurring day, use <strong>le</strong> + day: <em>Je vais à l’école le mercredi.</em></li>
+        <li>Use <strong>en</strong> for months: <em>en janvier</em> (in January).</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💬 Talking About Dates</h2>
+
+      <p>
+        <strong>Quel jour sommes-nous ?</strong><br>
+        (What day is it?)<br>
+        📅 <small>“Quel” = what, “jour” = day, “sommes-nous” = are we</small>
+      </p>
+
+      <p>
+        <strong>Nous sommes lundi.</strong><br>
+        (It’s Monday)<br>
+        🗓️ <small>Literally “We are Monday” – how the French say “It’s Monday.”</small>
+      </p>
+
+      <p>
+        <strong>Mon anniversaire est en juillet.</strong><br>
+        (My birthday is in July)<br>
+        🎂 <small>“anniversaire” = birthday, “en” = in</small>
+      </p>
+
+      <p>
+        <strong>Je vais à la plage en août.</strong><br>
+        (I go to the beach in August)<br>
+        🏖️ <small>“plage” = beach, “août” = August</small>
+      </p>
+
+      <p>
+        <strong>L’école commence en septembre.</strong><br>
+        (School starts in September)<br>
+        🏫 <small>“école” = school, “commence” = begins</small>
+      </p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🧠 Fun Facts</h2>
+      <ul>
+        <li>Most French day names come from Latin and are similar to English or other Romance languages.</li>
+        <li><strong>Mercredi</strong> comes from <em>Mercury</em>, and <strong>Jeudi</strong> from <em>Jupiter</em>!</li>
+        <li>To write the full date in French: <br><em>le 4 août 2025</em> → August 4, 2025</li>
+        <li>French calendars start with Monday (not Sunday) as the first day of the week.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="bottom-nav-buttons">
+  <a href="../french/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson5.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+
+<!-- Bottom Navigation Buttons -->
+
+<style>
+  .number-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

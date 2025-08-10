@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 1 – Greetings | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+    /* Audio button style */
+   .speaker-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-left: 6px;
+  background-color: #e6f0f6;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #004d7a;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-btn:hover {
+  background-color: #ff9500;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.speaker-btn:active {
+  transform: scale(0.95);
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 1: Greetings in German</h1>
+  <p>Start your German journey by learning how to greet others in daily conversations.</p>
+</section>
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">👋 Common German Greetings</h2>
+      <p>Mastering greetings is the first step in any language journey. Below are the most commonly used greetings in German:</p>
+      <ul>
+        <li><strong>Hallo</strong> – Hello (informal, general) <button class="speaker-btn" onclick="speak('Hallo')">🔊</button></li>
+        <li><strong>Guten Morgen</strong> – Good morning <button class="speaker-btn" onclick="speak('Guten Morgen')">🔊</button></li>
+        <li><strong>Guten Tag</strong> – Good day / Good afternoon <button class="speaker-btn" onclick="speak('Guten Tag')">🔊</button></li>
+        <li><strong>Guten Abend</strong> – Good evening <button class="speaker-btn" onclick="speak('Guten Abend')">🔊</button></li>
+        <li><strong>Gute Nacht</strong> – Good night <button class="speaker-btn" onclick="speak('Gute Nacht')">🔊</button></li>
+        <li><strong>Wie geht’s?</strong> – How are you? (informal) <button class="speaker-btn" onclick="speak('Wie geht’s?')">🔊</button></li>
+        <li><strong>Wie geht es Ihnen?</strong> – How are you? (formal) <button class="speaker-btn" onclick="speak('Wie geht es Ihnen?')">🔊</button></li>
+        <li><strong>Servus</strong> – Hello/Bye (Southern Germany, Austria) <button class="speaker-btn" onclick="speak('Servus')">🔊</button></li>
+        <li><strong>Grüß Gott</strong> – God greet you (Southern Germany) <button class="speaker-btn" onclick="speak('Grüß Gott')">🔊</button></li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🙋 Saying Goodbye</h2>
+      <p>Just as important as greeting someone is knowing how to say farewell:</p>
+      <ul>
+        <li><strong>Auf Wiedersehen</strong> – Goodbye (formal) <button class="speaker-btn" onclick="speak('Auf Wiedersehen')">🔊</button></li>
+        <li><strong>Tschüss</strong> – Bye (informal) <button class="speaker-btn" onclick="speak('Tschüss')">🔊</button></li>
+        <li><strong>Bis bald</strong> – See you soon <button class="speaker-btn" onclick="speak('Bis bald')">🔊</button></li>
+        <li><strong>Bis später</strong> – See you later <button class="speaker-btn" onclick="speak('Bis später')">🔊</button></li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💡 Quick Grammar Tips</h2>
+      <ul>
+        <li><strong>“Guten”</strong> is used before masculine words (e.g., "Tag", "Morgen"). <button class="speaker-btn" onclick="speak('Guten')">🔊</button></li>
+        <li><strong>“Wie geht's?”</strong> literally means "How goes it?" <button class="speaker-btn" onclick="speak('Wie geht’s?')">🔊</button></li>
+        <li><strong>Use formal speech</strong> with strangers or in professional settings.</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📘 Example Conversations</h2>
+      <p>
+        <strong>Person A:</strong> Good morning! How are you?<br>
+        <em>Guten Morgen! Wie geht’s?</em> <button class="speaker-btn" onclick="speak('Guten Morgen! Wie geht’s?')">🔊</button>
+      </p>
+      <p>
+        <strong>Person B:</strong> Good morning! I’m good, thank you. And you?<br>
+        <em>Guten Morgen! Mir geht’s gut, danke. Und dir?</em> <button class="speaker-btn" onclick="speak('Guten Morgen! Mir geht’s gut, danke. Und dir?')">🔊</button>
+      </p>
+      <p>
+        <strong>Person A:</strong> Hello! Bye!<br>
+        <em>Hallo! Tschüss!</em> <button class="speaker-btn" onclick="speak('Hallo! Tschüss!')">🔊</button>
+      </p>
+      <p>
+        <strong>Person B:</strong> See you soon!<br>
+        <em>Bis bald!</em> <button class="speaker-btn" onclick="speak('Bis bald!')">🔊</button>
+      </p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💭 Did You Know?</h2>
+      <ul>
+        <li>🤝 In formal situations, Germans often greet with a handshake and say <strong>“Guten Tag”</strong> (Good day) <button class="speaker-btn" onclick="speak('Guten Tag')">🔊</button></li>
+        <li>🗺️ In southern Germany (especially Bavaria) and Austria, people often greet each other with <strong>“Servus”</strong> (Hi/Bye) <button class="speaker-btn" onclick="speak('Servus')">🔊</button> or <strong>“Grüß Gott”</strong> (literally “Greet God”) <button class="speaker-btn" onclick="speak('Grüß Gott')">🔊</button><br>
+        ✨ These are regional greetings — friendly and traditional!<br></li>
+        <li>😊 Saying <strong>“Tschüss”</strong> (Bye) <button class="speaker-btn" onclick="speak('Tschüss')">🔊</button> with a smile is normal — it’s friendly and casual!</li>
+        <li>🇩🇪 German greetings can change depending on the time of day — like <strong>“Guten Morgen”</strong> (Good morning) <button class="speaker-btn" onclick="speak('Guten Morgen')">🔊</button> or <strong>“Guten Abend”</strong> (Good evening) <button class="speaker-btn" onclick="speak('Guten Abend')">🔊</button>.</li>
+        <li>🎯 Tip: Practice saying these out loud! Pronunciation matters in German 😄</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Bottom Navigation Buttons (above footer) -->
+<div class="bottom-nav-buttons">
+  <a href="../german/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson1.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+function speak(text) {
+  if (!('speechSynthesis' in window)) {
+    alert("Sorry, your browser doesn't support speech playback.");
+    return;
+  }
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'de-DE';
+  speechSynthesis.speak(utterance);
+}
+</script>
+
+</body>
+</html>

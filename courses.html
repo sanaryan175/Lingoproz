@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoQuest | Courses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .course-hero {
+      background: linear-gradient(to right, rgba(248, 249, 250, 0.95), rgba(255, 255, 255, 0.95)),
+                  url('assets/germany-flag.png') no-repeat right center;
+      background-size: cover;
+      border-radius: 25px;
+      margin: 60px auto;
+      padding: 40px;
+      max-width: 1100px;
+      color:  #004d7a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .course-hero.reverse {
+      flex-direction: row-reverse;
+      background: linear-gradient(to right, rgba(246, 247, 249, 0.95), rgba(255, 255, 255, 0.95)),
+                  url('assets/japan-flag.png') no-repeat left center;
+      background-size: cover;
+    }
+
+    .course-hero:hover {
+      transform: scale(1.02);
+    }
+
+    .course-text {
+      flex: 1;
+    }
+
+    .course-text h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+    }
+
+    .course-text p {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .course-text .btn {
+      background-color: #ff9500;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+    }
+
+    .course-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .course-image img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .course-hero, .course-hero.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        background-position: center !important;
+      }
+
+      .course-text h2 {
+        font-size: 1.8rem;
+      }
+
+      .course-text p {
+        font-size: 1rem;
+      }
+
+      .course-image {
+        margin-top: 20px;
+      }
+    }
+
+    footer {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LingoQuest</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+<section class="hero">
+  <h1>📚 Explore Our Language Courses</h1>
+  <p>Dive into curated lessons for German, Japanese and more — designed to make learning interactive and fun!</p>
+</section>
+
+
+  <!-- German Course -->
+  <section class="course-hero">
+    <div class="course-text">
+      <h2>Master German with Confidence</h2>
+<p>Fun, bite-sized lessons that help you speak like a native — from starting your first conversation to understanding popular German phrases.</p>
+
+      <a href="german.html" class="btn">Explore German</a>
+    </div>
+    <div class="course-image">
+      <img src="assets/german-flag.jpg" alt="German Course Image" />
+    </div>
+  </section>
+
+    <!-- French Course -->
+  <section class="course-hero reverse">
+    <div class="course-text">
+      <h2>Fall in Love with French</h2>
+      <p>Learn French the fun way — from café conversations to romantic expressions, explore the beauty of the French language.</p>
+      <a href="french.html" class="btn">Explore French</a>
+    </div>
+    <div class="course-image">
+      <img src="assets/france-flag.jpg" alt="French Course Image" />
+    </div>
+  </section>
+
+<!-- Enroll Form -->
+<section id="enroll" class="enroll-section">
+    <div class="glass-box form-container">
+      <h2>Let Us Know About Yourself</h2>
+      <form action="https://formsubmit.co/sanskritig1705@gmail.com" method="POST" class="enroll-form">
+        <input type="hidden" name="_next" value="https://sanaryan175.github.io/LingoQuest/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="What motivates you to learn this language?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 LingoQuest. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

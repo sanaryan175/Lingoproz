@@ -1,0 +1,3 @@
+[build]
+  publish = "."           # if your index.html is repo root; change if using 'public' or 'docs'
+  functions = "netlify/functions"

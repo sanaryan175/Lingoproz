@@ -1,0 +1,93 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LingoQuest | Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .gallery-section {
+      padding: 3rem 2rem;
+      background-color: #fefefe;
+      text-align: center;
+    }
+
+    .gallery-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #004d7a;
+    }
+
+    .gallery-section p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>🖼️ Explore Our Gallery</h1>
+  <p>Take a visual journey through our vibrant language learning community and events!</p>
+</section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <h1>Our Language Learning Journey</h1>
+    <p>Capturing moments from our classrooms, online sessions, and student events</p>
+
+    <div class="gallery-grid">
+      <img src="assets/images/gallery1.jpg" alt="Workshop 1" />
+      <img src="assets/images/gallery2.jpg" alt="German Class" />
+      <img src="assets/images/gallery3.jpg" alt="Spanish Speaking Activity" />
+      <img src="assets/images/gallery4.jpg" alt="Interactive Hindi Lesson" />
+      <img src="assets/images/gallery5.jpg" alt="Online Learning Session" />
+      <img src="assets/images/gallery6.jpg" alt="Student Achievement" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 LingoQuest. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

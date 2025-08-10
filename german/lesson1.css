@@ -1,0 +1,340 @@
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+ background: linear-gradient(135deg, #fff8f0, #e3f2fd, #fef6ff, #f0f8ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #222;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card {
+  position: relative; 
+  padding-bottom: 3.5rem; 
+  padding: 2rem 1.5rem 1.5rem 1.5rem; 
+
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 720px;
+  color: #004d7a;
+  animation: fadeInUp 0.6s ease;
+}
+
+.xp, .lives {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+
+.xpbar-container {
+  margin-top: 1rem;
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#xpBar {
+  height: 100%;
+  background: #00c896;
+  width: 0%;
+  border-radius: 6px;
+  
+   transition: width 0.5s ease;
+}
+
+.question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.options button,
+.popup-content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff9500;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.options button:hover,
+.popup-content button:hover {
+  background: #e67e00;
+  transform: scale(1.05);
+}
+
+.options button:active {
+  transform: scale(0.97);
+  background: #cc6e00;
+}
+
+.options button.correct {
+  background-color: #17ba22 !important;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 200, 150, 0.5);
+}
+
+.options button.wrong {
+  background-color: #e74c3c !important;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(231, 76, 60, 0.5);
+}
+
+.feedback {
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-height: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.popup-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+  animation: pop 0.4s ease-in-out;
+}
+
+.popup-content h2 {
+  color: #004d7a;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.popup-content-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.popup-content-buttons button {
+  flex: 1 1 120px;
+  margin: 0;
+}
+
+#result a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #004d7a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#result a:hover {
+  color: #002f4d;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.next-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #004d7a;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.next-btn:hover {
+  background: #003256;
+  transform: scale(1.05);
+}
+
+.next-btn:active {
+  transform: scale(0.97);
+  background: #00243d;
+}
+.corner-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.corner-btn {
+  background-color: #004d7a;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  flex: 1 1 45%;
+  margin: 0 0.25rem;
+}
+
+.corner-btn:hover {
+  background-color: #003256;
+  transform: scale(1.05);
+}
+.selected {
+  border: 2px solid #ff9500 !important;
+  background-color: #fff3e0 !important;
+  color:#ff9500 !important;
+  animation: pulse 0.25s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.xpbar-container {
+  margin-top: 1rem;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  position: relative; 
+}
+
+.right-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  flex:1;
+}
+
+#skipBtn,
+#checkBtn,
+#continueBtn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+
+#skipBtn {
+  background: #ff9500;
+  color: white;
+}
+#skipBtn:hover {
+  background: #e67e00;
+}
+
+
+#checkBtn {
+  background: #004d7a;
+  color: white;
+}
+#checkBtn:hover {
+  background: #003256;
+}
+
+
+#continueBtn {
+  background: #00c896;
+  color: white;
+ 
+}
+#continueBtn:hover {
+  background: #00a97a;
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.bounce {
+  animation: bounce 0.4s ease;
+}
+
+#sadEmoji {
+  transition: all 0.6s ease;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 999;
+}
+#svgReactionContainer {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+#svgReactionContainer.show {
+  opacity: 1;
+}

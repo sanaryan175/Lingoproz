@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 7 – My Home | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 7: My Home in German</h1>
+  <p>Talk about your house, rooms, furniture, and where things are in your living space.</p>
+</section>
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">🏡 Vocabulary: Rooms in the House</h2>
+      <ul>
+        <li><strong>das Haus</strong> <button class="speaker-btn" data-word="das Haus">🔊</button> – the house</li>
+        <li><strong>die Wohnung</strong> <button class="speaker-btn" data-word="die Wohnung">🔊</button> – the apartment</li>
+        <li><strong>das Wohnzimmer</strong> <button class="speaker-btn" data-word="das Wohnzimmer">🔊</button> – the living room</li>
+        <li><strong>das Schlafzimmer</strong> <button class="speaker-btn" data-word="das Schlafzimmer">🔊</button> – the bedroom</li>
+        <li><strong>die Küche</strong> <button class="speaker-btn" data-word="die Küche">🔊</button> – the kitchen</li>
+        <li><strong>das Badezimmer</strong> <button class="speaker-btn" data-word="das Badezimmer">🔊</button> – the bathroom</li>
+        <li><strong>der Flur</strong> <button class="speaker-btn" data-word="der Flur">🔊</button> – the hallway</li>
+        <li><strong>der Garten</strong> <button class="speaker-btn" data-word="der Garten">🔊</button> – the garden</li>
+        <li><strong>der Balkon</strong> <button class="speaker-btn" data-word="der Balkon">🔊</button> – the balcony</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🛋️ Vocabulary: Furniture & Items</h2>
+      <ul>
+        <li><strong>der Tisch</strong> <button class="speaker-btn" data-word="der Tisch">🔊</button> – the table</li>
+        <li><strong>der Stuhl</strong> <button class="speaker-btn" data-word="der Stuhl">🔊</button> – the chair</li>
+        <li><strong>das Bett</strong> <button class="speaker-btn" data-word="das Bett">🔊</button> – the bed</li>
+        <li><strong>die Lampe</strong> <button class="speaker-btn" data-word="die Lampe">🔊</button> – the lamp</li>
+        <li><strong>der Schrank</strong> <button class="speaker-btn" data-word="der Schrank">🔊</button> – the wardrobe/cupboard</li>
+        <li><strong>die Tür</strong> <button class="speaker-btn" data-word="die Tür">🔊</button> – the door</li>
+        <li><strong>das Fenster</strong> <button class="speaker-btn" data-word="das Fenster">🔊</button> – the window</li>
+        <li><strong>die Couch / das Sofa</strong> <button class="speaker-btn" data-word="die Couch / das Sofa">🔊</button> – the couch / sofa</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🧭 Prepositions: Where Things Are</h2>
+      <ul>
+        <li><strong>auf</strong> <button class="speaker-btn" data-word="auf">🔊</button> – on</li>
+        <li><strong>unter</strong> <button class="speaker-btn" data-word="unter">🔊</button> – under</li>
+        <li><strong>neben</strong> <button class="speaker-btn" data-word="neben">🔊</button> – next to</li>
+        <li><strong>hinter</strong> <button class="speaker-btn" data-word="hinter">🔊</button> – behind</li>
+        <li><strong>vor</strong> <button class="speaker-btn" data-word="vor">🔊</button> – in front of</li>
+        <li><strong>zwischen</strong> <button class="speaker-btn" data-word="zwischen">🔊</button> – between</li>
+        <li><strong>in</strong> <button class="speaker-btn" data-word="in">🔊</button> – in</li>
+      </ul>
+      <p><strong>Example:</strong> Die Lampe steht <strong>auf</strong> <button class="speaker-btn" data-word="auf">🔊</button> dem Tisch. (The lamp is on the table.)</p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🛠️ Sentence Structure – Made Easy!</h2>
+      <p>In German, the sentence usually follows this pattern: <strong>Subject + Verb + Rest of the sentence</strong>. Let's look at some simple examples related to your home:</p>
+      <ul>
+        <li>
+          <strong>Das Haus</strong> <button class="speaker-btn" data-word="Das Haus">🔊</button> ist groß.<br />
+          <em>(The house is big.)</em><br />
+          <small><strong>Das Haus</strong> = the house, <strong>ist</strong> = is, <strong>groß</strong> = big</small>
+        </li>
+        <li>
+          <strong>Die Küche</strong> <button class="speaker-btn" data-word="Die Küche">🔊</button> ist modern.<br />
+          <em>(The kitchen is modern.)</em><br />
+          <small><strong>Die Küche</strong> = the kitchen, <strong>modern</strong> = modern</small>
+        </li>
+        <li>
+          <strong>Das Fenster</strong> <button class="speaker-btn" data-word="Das Fenster">🔊</button> ist offen.<br />
+          <em>(The window is open.)</em><br />
+          <small><strong>Das Fenster</strong> = the window, <strong>offen</strong> = open</small>
+        </li>
+        <li>
+          <strong>Das Badezimmer</strong> <button class="speaker-btn" data-word="Das Badezimmer">🔊</button> ist sauber.<br />
+          <em>(The bathroom is clean.)</em><br />
+          <small><strong>Das Badezimmer</strong> = the bathroom, <strong>sauber</strong> = clean</small>
+        </li>
+        <li>
+          <strong>Das Schlafzimmer</strong> <button class="speaker-btn" data-word="Das Schlafzimmer">🔊</button> hat ein großes Bett.<br />
+          <em>(The bedroom has a big bed.)</em><br />
+          <small><strong>Das Schlafzimmer</strong> = the bedroom, <strong>hat</strong> = has, <strong>ein großes Bett</strong> = a big bed</small>
+        </li>
+      </ul>
+      <p>💡 Tip: In German, verbs often come in the second position in the sentence!</p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📘 Usage in Context – Easy German Sentences</h2>
+      <p>Let’s see how to use simple German sentences when talking about your home. Each sentence includes a breakdown to help you understand it word by word:</p>
+
+      <p>
+        <strong>Ich</strong> <button class="speaker-btn" data-word="Ich">🔊</button> wohne in <strong>einem kleinen Haus</strong> <button class="speaker-btn" data-word="einem kleinen Haus">🔊</button>.<br />
+        <em>(I live in a small house.)</em><br />
+        <small>
+          <strong>Ich</strong> = I, 
+          <strong>wohne</strong> = live, 
+          <strong>in einem kleinen Haus</strong> = in a small house
+        </small>
+      </p>
+
+      <p>
+        <strong>Meine Wohnung</strong> <button class="speaker-btn" data-word="Meine Wohnung">🔊</button> hat <strong>zwei Schlafzimmer</strong> <button class="speaker-btn" data-word="zwei Schlafzimmer">🔊</button>.<br />
+        <em>(My apartment has two bedrooms.)</em><br />
+        <small>
+          <strong>Meine Wohnung</strong> = my apartment, 
+          <strong>hat</strong> = has, 
+          <strong>zwei Schlafzimmer</strong> = two bedrooms
+        </small>
+      </p>
+
+      <p>
+        <strong>Die Lampe</strong> <button class="speaker-btn" data-word="Die Lampe">🔊</button> ist <strong>auf dem Tisch</strong> <button class="speaker-btn" data-word="auf dem Tisch">🔊</button>.<br />
+        <em>(The lamp is on the table.)</em><br />
+        <small>
+          <strong>Die Lampe</strong> = the lamp, 
+          <strong>ist</strong> = is, 
+          <strong>auf dem Tisch</strong> = on the table
+        </small>
+      </p>
+
+      <p>
+        <strong>Der Garten</strong> <button class="speaker-btn" data-word="Der Garten">🔊</button> ist <strong>schön und grün</strong> <button class="speaker-btn" data-word="schön und grün">🔊</button>.<br />
+        <em>(The garden is beautiful and green.)</em><br />
+        <small>
+          <strong>Der Garten</strong> = the garden, 
+          <strong>ist</strong> = is, 
+          <strong>schön und grün</strong> = beautiful and green
+        </small>
+      </p>
+
+      <p>💬 These kinds of sentences help you describe your home and surroundings in everyday conversations!</p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💡 Did You Know?</h2>
+      <ul>
+        <li>🪟 In Germany, most homes have <strong>“Dreh-Kipp” windows</strong> <button class="speaker-btn" data-word="Dreh-Kipp windows">🔊</button>, which can be tilted inward or opened fully—great for ventilation and safety!</li>
+
+        <li>🚪 All German nouns have genders. For example: <strong>das Haus</strong> <button class="speaker-btn" data-word="das Haus">🔊</button> (neuter), <strong>die Küche</strong> <button class="speaker-btn" data-word="die Küche">🔊</button> (feminine), and <strong>der Garten</strong> <button class="speaker-btn" data-word="der Garten">🔊</button> (masculine). Learning the correct article is essential!</li>
+
+        <li>🧼 It's common to remove your shoes before entering a German home. Guests are often offered <em>Hausschuhe</em> (house slippers) as a polite gesture.</li>
+
+        <li>🌿 German homes are often designed with eco-friendly features like solar panels, thick insulation, and organized recycling systems with color-coded bins inside the house.</li>
+
+        <li>🛋️ Germans love describing their rooms using adjectives with endings that match the noun’s gender. For example: <em>ein gemütliches Wohnzimmer</em> (a cozy living room), <em>eine helle Küche</em> (a bright kitchen).</li>
+
+        <li>🛏️ The word <strong>Zimmer</strong> <button class="speaker-btn" data-word="Zimmer">🔊</button> (room) is used to build many home-related words: <em>Schlafzimmer</em> (bedroom), <em>Wohnzimmer</em> (living room), <em>Kinderzimmer</em> (children’s room), and more.</li>
+
+        <li>📚 There’s a cultural tradition called <strong>Frühjahrsputz</strong> <button class="speaker-btn" data-word="Frühjahrsputz">🔊</button> (spring cleaning), where Germans deep-clean their homes to welcome the new season fresh and tidy!</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Navigation Buttons (above footer) -->
+<div class="bottom-nav-buttons">
+  <a href="../german/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson7.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+  // Speaker button click
+  document.querySelectorAll('.speaker-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audioSrc = btn.getAttribute('data-audio');
+      const word = btn.getAttribute('data-word');
+
+      if (audioSrc) {
+        const audio = new Audio(audioSrc);
+        audio.play();
+      } else if (word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'de-DE';
+        speechSynthesis.speak(utterance);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+

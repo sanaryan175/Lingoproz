@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 3 – Family | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 3: Family in German</h1>
+  <p>Learn how to talk about your family and loved ones in German.</p>
+</section>
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+<div class="learn-box">
+  <h2 class="section-heading">👨‍👩‍👧‍👦 Key Family Vocabulary</h2>
+  <ul class="number-grid">
+    <li><strong>Die Familie</strong> – Family 
+      <button class="speaker-btn" data-word="Die Familie">🔊</button>
+    </li>
+    <li><strong>Der Vater</strong> – Father 
+      <button class="speaker-btn" data-word="Der Vater">🔊</button>
+    </li>
+    <li><strong>Die Mutter</strong> – Mother 
+      <button class="speaker-btn" data-word="Die Mutter">🔊</button>
+    </li>
+    <li><strong>Der Bruder</strong> – Brother 
+      <button class="speaker-btn" data-word="Der Bruder">🔊</button>
+    </li>
+    <li><strong>Die Schwester</strong> – Sister 
+      <button class="speaker-btn" data-word="Die Schwester">🔊</button>
+    </li>
+    <li><strong>Die Eltern</strong> – Parents 
+      <button class="speaker-btn" data-word="Die Eltern">🔊</button>
+    </li>
+    <li><strong>Der Sohn</strong> – Son 
+      <button class="speaker-btn" data-word="Der Sohn">🔊</button>
+    </li>
+    <li><strong>Die Tochter</strong> – Daughter 
+      <button class="speaker-btn" data-word="Die Tochter">🔊</button>
+    </li>
+    <li><strong>Die Großeltern</strong> – Grandparents 
+      <button class="speaker-btn" data-word="Die Großeltern">🔊</button>
+    </li>
+    <li><strong>Der Großvater (Opa)</strong> – Grandfather 
+      <button class="speaker-btn" data-word="Der Großvater">🔊</button>
+      <button class="speaker-btn" data-word="Opa">🔊</button>
+    </li>
+    <li><strong>Die Großmutter (Oma)</strong> – Grandmother 
+      <button class="speaker-btn" data-word="Die Großmutter">🔊</button>
+      <button class="speaker-btn" data-word="Oma">🔊</button>
+    </li>
+    <li><strong>Der Onkel</strong> – Uncle 
+      <button class="speaker-btn" data-word="Der Onkel">🔊</button>
+    </li>
+    <li><strong>Die Tante</strong> – Aunt 
+      <button class="speaker-btn" data-word="Die Tante">🔊</button>
+    </li>
+    <li><strong>Der Cousin</strong> – Male cousin 
+      <button class="speaker-btn" data-word="Der Cousin">🔊</button>
+    </li>
+    <li><strong>Die Cousine</strong> – Female cousin 
+      <button class="speaker-btn" data-word="Die Cousine">🔊</button>
+    </li>
+    <li><strong>Das Kind</strong> – Child 
+      <button class="speaker-btn" data-word="Das Kind">🔊</button>
+    </li>
+    <li><strong>Die Kinder</strong> – Children 
+      <button class="speaker-btn" data-word="Die Kinder">🔊</button>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="learn-box">
+  <h2 class="section-heading">📚 Grammar Tips</h2>
+  <ul>
+    <li><strong>Gender & Articles:</strong> Masculine → <em>der</em> 
+      <button class="speaker-btn" data-word="der">🔊</button>, 
+      Feminine → <em>die</em> 
+      <button class="speaker-btn" data-word="die">🔊</button>, 
+      Neutral → <em>das</em> 
+      <button class="speaker-btn" data-word="das">🔊</button>.
+    </li>
+
+    <li><strong>Plural Form:</strong> In German, plurals often change both the <strong>article</strong> and sometimes the <strong>word</strong> itself.<br>
+      Examples:<br>
+      <strong>Die Mutter</strong> 
+      <button class="speaker-btn" data-word="Die Mutter">🔊</button> 
+      → <em>Die Mütter</em> 
+      <button class="speaker-btn" data-word="Die Mütter">🔊</button> 
+      (the mother → the mothers)<br>
+      <strong>Der Vater</strong> 
+      <button class="speaker-btn" data-word="Der Vater">🔊</button> 
+      → <em>Die Väter</em> 
+      <button class="speaker-btn" data-word="Die Väter">🔊</button> 
+      (the father → the fathers)<br>
+      🔁 Note: The article for <strong>all plurals</strong> is <strong>die</strong> 
+      <button class="speaker-btn" data-word="die">🔊</button>, regardless of gender!<br>
+      🔤 Many plurals add <strong>dots (Umlauts)</strong> like 
+      <em>ä</em> 
+      <button class="speaker-btn" data-word="ä">🔊</button>, 
+      <em>ö</em> 
+      <button class="speaker-btn" data-word="ö">🔊</button>, 
+      <em>ü</em> 
+      <button class="speaker-btn" data-word="ü">🔊</button> 
+      or an ending like <strong>-n, -e, -er</strong>.
+    </li>
+
+    <li><strong>Possessive Pronouns:</strong> 
+      "Mein Vater" 
+      <button class="speaker-btn" data-word="Mein Vater">🔊</button> 
+      (my father), 
+      "Meine Mutter" 
+      <button class="speaker-btn" data-word="Meine Mutter">🔊</button> 
+      (my mother). Gender affects the pronoun ending.
+    </li>
+
+    <li><strong>Verb Agreement:</strong> 
+      “Meine Eltern <strong>sind</strong> nett” 
+      <button class="speaker-btn" data-word="Meine Eltern sind nett">🔊</button> 
+      (My parents are nice).
+    </li>
+  </ul>
+</div>
+
+<style>
+  mark {
+    background-color: yellow;
+    padding: 0 3px;
+    border-radius: 3px;
+  }
+</style>
+
+<div class="learn-box">
+  <h2 class="section-heading">💬 Usage in Context – Talking About Family</h2>
+
+  <p>
+    <strong>Ich habe <mark>einen Bruder</mark> und <mark>eine Schwester</mark>.</strong>
+    <button class="speaker-btn" data-word="Ich habe einen Bruder und eine Schwester">🔊</button><br>
+    <em>I have a <mark>brother</mark> and a <mark>sister</mark>.</em><br>
+    🧠 <small>
+      Note: “<mark>Bruder</mark>” <button class="speaker-btn" data-word="Bruder">🔊</button> is masculine → 
+      <strong><mark>einen</mark></strong>, “<mark>Schwester</mark>” <button class="speaker-btn" data-word="Schwester">🔊</button> is feminine → 
+      <strong><mark>eine</mark></strong>
+    </small>
+  </p>
+
+  <p>
+    <strong>Mein <mark>Vater</mark> ist <mark>Arzt</mark>.</strong>
+    <button class="speaker-btn" data-word="Mein Vater ist Arzt">🔊</button><br>
+    <em>My father is a doctor.</em><br>
+    🩺 <small>
+      “<mark>Arzt</mark>” <button class="speaker-btn" data-word="Arzt">🔊</button> means doctor (male). 
+      If female: “<mark>Ärztin</mark>” <button class="speaker-btn" data-word="Ärztin">🔊</button>
+    </small>
+  </p>
+
+  <p>
+    <strong>Meine <mark>Großeltern</mark> wohnen in <mark>Berlin</mark>.</strong>
+    <button class="speaker-btn" data-word="Meine Großeltern wohnen in Berlin">🔊</button><br>
+    <em>My grandparents live in Berlin.</em><br>
+    🏙️ <small>
+      “<mark>Großeltern</mark>” <button class="speaker-btn" data-word="Großeltern">🔊</button> = grandparents 
+      (plural of “<mark>Großvater</mark>” <button class="speaker-btn" data-word="Großvater">🔊</button> & 
+      “<mark>Großmutter</mark>” <button class="speaker-btn" data-word="Großmutter">🔊</button>)
+    </small>
+  </p>
+
+  <p>
+    <strong><mark>Wie heißt</mark> deine <mark>Mutter</mark>?</strong>
+    <button class="speaker-btn" data-word="Wie heißt deine Mutter">🔊</button><br>
+    <em>What is your mother’s name?</em><br>
+    ❓ <small>
+      “<mark>Wie heißt</mark>” <button class="speaker-btn" data-word="Wie heißt">🔊</button> ...? is a common way to ask someone’s name in German.
+    </small>
+  </p>
+
+  <p>
+    <strong>Meine <mark>Familie</mark> ist sehr <mark>groß</mark>.</strong>
+    <button class="speaker-btn" data-word="Meine Familie ist sehr groß">🔊</button><br>
+    <em>My family is very big.</em><br>
+    👨‍👩‍👧‍👦 <small>
+      “<mark>groß</mark>” <button class="speaker-btn" data-word="groß">🔊</button> = big/large → talking about number of family members.
+    </small>
+  </p>
+</div>
+
+
+
+
+<div class="learn-box">
+  <h2 class="section-heading">🧠 Fun Facts</h2>
+  <ul>
+    <li>
+      In German culture, family titles are often used with respect —
+      e.g., <strong>Mutti</strong> 
+      <button class="speaker-btn" data-word="Mutti">🔊</button>
+      for mom or <strong>Vati</strong> 
+      <button class="speaker-btn" data-word="Vati">🔊</button>
+      for dad affectionately.
+    </li>
+
+    <li>
+      Plural endings change depending on gender and root word —
+      e.g., <strong>Bruder</strong> 
+      <button class="speaker-btn" data-word="Bruder">🔊</button>
+      → <strong>Brüder</strong> 
+      <button class="speaker-btn" data-word="Brüder">🔊</button>,
+      <strong>Schwester</strong> 
+      <button class="speaker-btn" data-word="Schwester">🔊</button>
+      → <strong>Schwestern</strong> 
+      <button class="speaker-btn" data-word="Schwestern">🔊</button>.
+    </li>
+
+    <li>
+      The word <strong>Familie</strong> 
+      <button class="speaker-btn" data-word="Familie">🔊</button>
+      is feminine, so we say <strong>die Familie</strong> 
+      <button class="speaker-btn" data-word="die Familie">🔊</button>.
+    </li>
+  </ul>
+</div>
+
+</section>
+
+<!-- Bottom Navigation Buttons -->
+<div class="bottom-nav-buttons">
+  <a href="../german/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson3.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .number-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+  // Speaker button click
+  document.querySelectorAll('.speaker-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audioSrc = btn.getAttribute('data-audio');
+      const word = btn.getAttribute('data-word');
+
+      if (audioSrc) {
+        const audio = new Audio(audioSrc);
+        audio.play();
+      } else if (word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'de-DE';
+        speechSynthesis.speak(utterance);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

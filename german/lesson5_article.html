@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 5 – Days, Months & Seasons | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: rgba(0, 77, 122, 0.9);
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      .navbar nav ul.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 5: Days, Months & Seasons in German</h1>
+  <p>Master the German words for days of the week, months of the year, and the four seasons!</p>
+</section>
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">📅 Days of the Week (Wochentage)</h2>
+      <ul class="number-grid">
+        <li><strong>Montag</strong> <button class="speaker-btn" data-word="Montag">🔊</button> – Monday</li>
+        <li><strong>Dienstag</strong> <button class="speaker-btn" data-word="Dienstag">🔊</button> – Tuesday</li>
+        <li><strong>Mittwoch</strong> <button class="speaker-btn" data-word="Mittwoch">🔊</button> – Wednesday</li>
+        <li><strong>Donnerstag</strong> <button class="speaker-btn" data-word="Donnerstag">🔊</button> – Thursday</li>
+        <li><strong>Freitag</strong> <button class="speaker-btn" data-word="Freitag">🔊</button> – Friday</li>
+        <li><strong>Samstag</strong> <button class="speaker-btn" data-word="Samstag">🔊</button> – Saturday</li>
+        <li><strong>Sonntag</strong> <button class="speaker-btn" data-word="Sonntag">🔊</button> – Sunday</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🗓️ Months of the Year (Monate)</h2>
+      <ul class="number-grid">
+        <li><strong>Januar</strong> <button class="speaker-btn" data-word="Januar">🔊</button> – January</li>
+        <li><strong>Februar</strong> <button class="speaker-btn" data-word="Februar">🔊</button> – February</li>
+        <li><strong>März</strong> <button class="speaker-btn" data-word="März">🔊</button> – March</li>
+        <li><strong>April</strong> <button class="speaker-btn" data-word="April">🔊</button> – April</li>
+        <li><strong>Mai</strong> <button class="speaker-btn" data-word="Mai">🔊</button> – May</li>
+        <li><strong>Juni</strong> <button class="speaker-btn" data-word="Juni">🔊</button> – June</li>
+        <li><strong>Juli</strong> <button class="speaker-btn" data-word="Juli">🔊</button> – July</li>
+        <li><strong>August</strong> <button class="speaker-btn" data-word="August">🔊</button> – August</li>
+        <li><strong>September</strong> <button class="speaker-btn" data-word="September">🔊</button> – September</li>
+        <li><strong>Oktober</strong> <button class="speaker-btn" data-word="Oktober">🔊</button> – October</li>
+        <li><strong>November</strong> <button class="speaker-btn" data-word="November">🔊</button> – November</li>
+        <li><strong>Dezember</strong> <button class="speaker-btn" data-word="Dezember">🔊</button> – December</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🌤️ Seasons (Jahreszeiten)</h2>
+      <ul class="number-grid">
+        <li><strong>der Frühling</strong> <button class="speaker-btn" data-word="der Frühling">🔊</button> – Spring</li>
+        <li><strong>der Sommer</strong> <button class="speaker-btn" data-word="der Sommer">🔊</button> – Summer</li>
+        <li><strong>der Herbst</strong> <button class="speaker-btn" data-word="der Herbst">🔊</button> – Autumn / Fall</li>
+        <li><strong>der Winter</strong> <button class="speaker-btn" data-word="der Winter">🔊</button> – Winter</li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💬 Usage in Context</h2>
+      <p>
+        <strong>Heute ist Montag.</strong> <button class="speaker-btn" data-word="Heute ist Montag.">🔊</button><br>
+        <em>Today is Monday.</em><br>
+        🗓️ <small>“Heute” <button class="speaker-btn" data-word="Heute">🔊</button> = today</small>
+      </p>
+
+      <p>
+        <strong>Mein Geburtstag ist im Juli.</strong> <button class="speaker-btn" data-word="Mein Geburtstag ist im Juli.">🔊</button><br>
+        <em>My birthday is in July.</em><br>
+        🎉 <small>“im” <button class="speaker-btn" data-word="im">🔊</button> is used for months and seasons → “im Juli” <button class="speaker-btn" data-word="im Juli">🔊</button>, “im Sommer” <button class="speaker-btn" data-word="im Sommer">🔊</button></small>
+      </p>
+
+      <p>
+        <strong>Im Herbst sind die Blätter bunt.</strong> <button class="speaker-btn" data-word="Im Herbst sind die Blätter bunt.">🔊</button><br>
+        <em>In autumn, the leaves are colorful.</em><br>
+        🍂 <small>“bunt” <button class="speaker-btn" data-word="bunt">🔊</button> = colorful, “Blätter” <button class="speaker-btn" data-word="Blätter">🔊</button> = leaves</small>
+      </p>
+
+      <p>
+        <strong>Wir fahren im Winter in die Berge.</strong> <button class="speaker-btn" data-word="Wir fahren im Winter in die Berge.">🔊</button><br>
+        <em>We go to the mountains in winter.</em><br>
+        🏔️ <small>“fahren” <button class="speaker-btn" data-word="fahren">🔊</button> = travel/go by vehicle, “Berge” <button class="speaker-btn" data-word="Berge">🔊</button> = mountains</small>
+      </p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🧠 Did You Know?</h2>
+      <ul>
+        <li>Days and months are <strong>not</strong> capitalized in English, but they <strong>are</strong> in German!</li>
+        <li>All seasons in German are masculine nouns → <strong>der Frühling</strong> <button class="speaker-btn" data-word="der Frühling">🔊</button>, <strong>Sommer</strong> <button class="speaker-btn" data-word="Sommer">🔊</button>, <strong>Herbst</strong> <button class="speaker-btn" data-word="Herbst">🔊</button>, <strong>Winter</strong> <button class="speaker-btn" data-word="Winter">🔊</button></li>
+        <li>The preposition “<strong>im</strong>” <button class="speaker-btn" data-word="im">🔊</button> is short for “in dem” <button class="speaker-btn" data-word="in dem">🔊</button> and is used with months and seasons.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Navigation Buttons -->
+<div class="bottom-nav-buttons">
+  <a href="../german/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson5.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+
+<style>
+  .number-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+  // Speaker button click
+  document.querySelectorAll('.speaker-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audioSrc = btn.getAttribute('data-audio');
+      const word = btn.getAttribute('data-word');
+
+      if (audioSrc) {
+        const audio = new Audio(audioSrc);
+        audio.play();
+      } else if (word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'de-DE';
+        speechSynthesis.speak(utterance);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+

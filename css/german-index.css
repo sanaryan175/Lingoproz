@@ -1,0 +1,145 @@
+/* === Base Reset === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff8f0, #e3f2fd, #fef6ff, #f0f8ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004d7a;
+}
+
+/* === Gradient Animation === */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Glass Card === */
+.glass-box {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* === Heading === */
+.glass-box h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #004d7a;
+}
+
+/* === Lesson List === */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #004d7a, #0078a0);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-bottom: 5px solid #ff9500;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* Glass Box Section */
+.glass-box {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.glass-box h2 {
+  font-size: 2rem;
+  color: #004d7a;
+  margin-bottom: 1.5rem;
+}
+
+/* Lesson List */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.lesson-list li a {
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #004d7a;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-list li a:hover {
+  background-color: #ff9500;
+  color: white;
+  transform: translateX(8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  background: #004d7a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .glass-box {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .lesson-list li a {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+  }
+}
+

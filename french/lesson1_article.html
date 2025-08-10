@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 1 – Greetings | LingoQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">LingoQuest</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+       <li><a href="../courses.html">Courses</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../career.html">Career</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Lesson 1: Greetings in French</h1>
+  <p>Start your French journey by learning how to greet people in everyday situations.</p>
+</section>
+
+<!-- Lesson Article Content -->
+<section class="lesson-article">
+  <div class="content-wrapper">
+
+    <div class="learn-box">
+      <h2 class="section-heading">👋 Common French Greetings</h2>
+      <p>Here are the most used greetings in French, explained word by word:</p>
+      <ul>
+        <li><strong>Bonjour</strong> <button class="speaker-btn" data-word="Bonjour">🔊</button> – Hello / Good day<br><em>Bon = good, jour = day</em></li>
+        <li><strong>Bonsoir</strong> <button class="speaker-btn" data-word="Bonsoir">🔊</button> – Good evening<br><em>Bon = good, soir = evening</em></li>
+        <li><strong>Salut</strong> <button class="speaker-btn" data-word="Salut">🔊</button> – Hi / Bye (informal)<br><em>Used with friends or people your age</em></li>
+        <li><strong>Ça va ?</strong> <button class="speaker-btn" data-word="Ça va">🔊</button> – How are you?<br><em>Literally: It goes?</em></li>
+        <li><strong>Comment ça va ?</strong> <button class="speaker-btn" data-word="Comment ça va">🔊</button> – How’s it going?<br><em>Comment = how, ça va = it goes</em></li>
+        <li><strong>Très bien, merci</strong> <button class="speaker-btn" data-word="Très bien, merci">🔊</button> – Very well, thank you<br><em>Très = very, bien = well, merci = thank you</em></li>
+        <li><strong>Enchanté(e)</strong> <button class="speaker-btn" data-word="Enchanté">🔊</button> – Nice to meet you<br><em>Literally: Delighted</em></li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">🙋 Saying Goodbye</h2>
+      <p>Learn to say goodbye in different ways:</p>
+      <ul>
+        <li><strong>Au revoir</strong> <button class="speaker-btn" data-word="Au revoir">🔊</button> – Goodbye<br><em>Au = to, revoir = see again</em></li>
+        <li><strong>À bientôt</strong> <button class="speaker-btn" data-word="À bientôt">🔊</button> – See you soon<br><em>À = to/until, bientôt = soon</em></li>
+        <li><strong>À plus tard</strong> <button class="speaker-btn" data-word="À plus tard">🔊</button> – See you later<br><em>Plus tard = later</em></li>
+        <li><strong>Bonne nuit</strong> <button class="speaker-btn" data-word="Bonne nuit">🔊</button> – Good night<br><em>Bonne = good (fem.), nuit = night</em></li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💡 Quick Grammar Tips</h2>
+      <ul>
+        <li><strong>Bon/Bonne</strong> <button class="speaker-btn" data-word="Bon Bonne">🔊</button> changes with gender: "bon" (masculine), "bonne" (feminine).</li>
+        <li>“Salut” <button class="speaker-btn" data-word="Salut">🔊</button> is casual—don’t use it with teachers or strangers.</li>
+        <li>“Ça va” <button class="speaker-btn" data-word="Ça va">🔊</button> can be a question or an answer: <br>Q: <em>Ça va ?</em> A: <em>Oui, ça va.</em></li>
+      </ul>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">📘 Example Conversations</h2>
+
+      <p>
+        <strong>Person A:</strong> Hello! How are you?<br>
+        <em>Bonjour ! <button class="speaker-btn" data-word="Bonjour">🔊</button> Ça va ? <button class="speaker-btn" data-word="Ça va">🔊</button></em>
+      </p>
+      <p>
+        <strong>Person B:</strong> I’m fine, thank you. And you?<br>
+        <em>Ça va bien, merci. <button class="speaker-btn" data-word="Ça va bien merci">🔊</button> Et toi ? <button class="speaker-btn" data-word="Et toi">🔊</button></em><br>
+        <small><em>Et = and, toi = you (informal)</em></small>
+      </p>
+
+      <p>
+        <strong>Person A:</strong> Nice to meet you!<br>
+        <em>Enchanté(e) ! <button class="speaker-btn" data-word="Enchanté">🔊</button></em>
+      </p>
+      <p>
+        <strong>Person B:</strong> Goodbye! See you later!<br>
+        <em>Au revoir ! <button class="speaker-btn" data-word="Au revoir">🔊</button> À plus tard ! <button class="speaker-btn" data-word="À plus tard">🔊</button></em>
+      </p>
+    </div>
+
+    <div class="learn-box">
+      <h2 class="section-heading">💭 Did You Know?</h2>
+      <ul>
+        <li>🗣️ French greetings change by **time of day**: use <strong>Bonjour</strong> <button class="speaker-btn" data-word="Bonjour">🔊</button> until 6 PM, then switch to <strong>Bonsoir</strong> <button class="speaker-btn" data-word="Bonsoir">🔊</button>.</li>
+        <li>🧒 Say <strong>Salut</strong> <button class="speaker-btn" data-word="Salut">🔊</button> only to **friends or people your age**—it’s informal!</li>
+        <li>🌙 <strong>Bonne nuit</strong> <button class="speaker-btn" data-word="Bonne nuit">🔊</button> is used only when someone is going to sleep, not just leaving in the evening.</li>
+        <li>🤝 It’s polite to greet people in shops and offices with <strong>Bonjour</strong> <button class="speaker-btn" data-word="Bonjour">🔊</button> – always!</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Navigation Buttons -->
+<div class="bottom-nav-buttons">
+  <a href="../french/index.html" class="btn nav-btn">← Back to Course List</a>
+  <a href="lesson1.html" class="btn nav-btn">Attempt Quiz →</a>
+</div>
+<style>
+  .bottom-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem auto 2rem;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav-buttons .nav-btn {
+    flex: 1;
+    text-align: center;
+    background-color: #004d7a;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .bottom-nav-buttons .nav-btn:hover {
+    background-color: #ff9500;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .bottom-nav-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+</style>
+
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 LingoQuest. All rights reserved.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  function playAudio(text) {
+    const synth = window.speechSynthesis;
+    if (synth.speaking) {
+      synth.cancel();
+    }
+    const utterThis = new SpeechSynthesisUtterance(text);
+    utterThis.lang = "fr-FR";
+    synth.speak(utterThis);
+  }
+
+  const buttons = document.querySelectorAll(".speaker-btn");
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const word = btn.getAttribute("data-word");
+      if (word) playAudio(word);
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>
+
