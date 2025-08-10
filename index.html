@@ -393,23 +393,27 @@
 
 /* Message bubbles */
 .bot-msg,
-.user-msg {
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 12px;
-  font-size: 14px;
-  line-height: 1.3;
-  max-width: 82%;
-  word-break: break-word;
+/* Bot bubble - soft blue glass style */
+.bot-msg {
+  background: linear-gradient(135deg, rgba(0,77,122,0.1), rgba(0,77,122,0.25));
+  color: #004d7a;
+  align-self: flex-start;
+  border-radius: 12px 12px 12px 0;
+  padding: 10px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
 }
 
-/* Bot bubble (left) */
-.bot-msg {
-  background: var(--muted);
-  color: var(--text);
-  align-self: flex-start;
-  box-shadow: 0 6px 18px rgba(2,20,40,0.04);
+/* User bubble - warm gradient */
+.user-msg {
+  background: linear-gradient(135deg, #ff9500, #ffb84d);
+  color: #fff;
+  align-self: flex-end;
+  border-radius: 12px 12px 0 12px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
 
 /* User bubble (right) */
 .user-msg {
@@ -560,7 +564,7 @@ const chatbotMessages = document.getElementById("chatbot-messages");
 const chatbotInput = document.getElementById("chatbot-input");
 const chatbotSend = document.getElementById("chatbot-send");
 
-let selectedLanguage = null;
+let selectedLanguage = "English";
 let isOpen = false; // Track if chatbox is open
 
 // Circle click toggles chatbox
@@ -585,15 +589,10 @@ function closeChat() {
 
 function startConversation() {
   chatbotMessages.innerHTML = `
-    <div class="bot-msg">Hi 👋! I’m your LingoQuest assistant.</div>
-    <div class="bot-msg">Please choose a language:</div>
-    <div class="bot-msg">
-      <button class="lang-btn" onclick="setLanguage('German')">🇩🇪 German</button>
-      <button class="lang-btn" onclick="setLanguage('French')">🇫🇷 French</button>
-      <button class="lang-btn" onclick="setLanguage('Hindi')">🇮🇳 Hindi</button>
-    </div>
+    <div class="bot-msg">Hi 👋! I’m your LingoQuest assistant. How can I help you today?</div>
   `;
 }
+
 
 window.setLanguage = function(lang) {
   selectedLanguage = lang;
@@ -615,10 +614,6 @@ function sendMessage() {
   chatbotInput.value = "";
   chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
 
-  if (!selectedLanguage) {
-    chatbotMessages.innerHTML += `<div class="bot-msg">Please select a language first.</div>`;
-    return;
-  }
 
   setTimeout(() => {
     chatbotMessages.innerHTML += `<div class="bot-msg">[${selectedLanguage} Reply] This is where AI will answer.</div>`;
